@@ -1,11 +1,16 @@
-FROM node:20-slim AS builder
-WORKDIR /usr/src/app
-COPY package.json .
-COPY package-lock.json* .
-RUN npm ci
+FROM node:22-slim AS build-env
+ENV PNPM_HOME="/pnpm"
+ENV PATH="$PNPM_HOME:$PATH"
+RUN corepack enable
 
-FROM node:20-slim
-WORKDIR /usr/src/app
-COPY --from=builder /usr/src/app/ /usr/src/app/
-COPY . .
-CMD ["npx", "quartz", "build", "--serve"]
+COPY pnpm-lock.yaml /app/pnpm-lock.yaml
+COPY package.json /app/package.json
+WORKDIR /app
+RUN --mount=type=cache,id=pnpm,target=/pnpm/store pnpm install --frozen-lockfile
+
+COPY . /app
+RUN pnpm run quartz build
+
+FROM ghcr.io/static-web-server/static-web-server:2
+COPY --from=build-env /app/public /app
+ENV SERVER_ROOT=/app
