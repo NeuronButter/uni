@@ -9,9 +9,12 @@
 | there exists                       | $\exists$         | `\exists`         |
 | element of /<br>belongs to /<br>in | $\in$             | `\in`             |
 | implies and is implied by          | $\leftrightarrow$ | `\leftrightarrow` |
+| divides                            | $\mid$            | `\mid`            |
+| does not divides                   | $\nmid$           | `\nmid`           |
+| there is no                        | $\nexists$        | `\nexists`        |
+| set difference (not of this set)   | $\setminus$       | `\setminus`       |
 
 ## Number Sets
-
 
 | Description      | Symbol       | Code         |
 | ---------------- | ------------ | ------------ |

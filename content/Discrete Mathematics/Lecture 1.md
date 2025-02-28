@@ -12,6 +12,8 @@ Two statements can be **logically equivalent** if their truth tables have identi
 ![[Pasted image 20250221143522.png]]
 
 The top two rows are trivial. For the bottom rows, we have no information on $q$. By convention, since we cannot disprove the implication (if $p$ is not true), we accept that the implication (the result of $q$) is true.
+
+Loosely translated to: *if the first one is true, only if the second is also, plus all the times it's not the first one*
 ![[Pasted image 20250221143656.png]]
 Note that $p \to q$ is logically equivalent to $\neg (p \land \neg q)$, and similarly is logically equivalent with $\neg p \lor q$.
 ## Tautology / Contradictions
