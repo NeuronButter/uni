@@ -1,18 +1,25 @@
 
-| Description                        | Symbol            | Code              |
-| ---------------------------------- | ----------------- | ----------------- |
-| logical and                        | $\land$           | `\land`           |
-| logical or                         | $\lor$            | `\lor`            |
-| not / negation                     | $\neg$            | `\neg`            |
-| implies                            | $\to$             | `\to`             |
-| for all                            | $\forall$         | `\forall`         |
-| there exists                       | $\exists$         | `\exists`         |
-| element of /<br>belongs to /<br>in | $\in$             | `\in`             |
-| implies and is implied by          | $\leftrightarrow$ | `\leftrightarrow` |
-| divides                            | $\mid$            | `\mid`            |
-| does not divides                   | $\nmid$           | `\nmid`           |
-| there is no                        | $\nexists$        | `\nexists`        |
-| set difference (not of this set)   | $\setminus$       | `\setminus`       |
+| Description                                   | Symbol             | Code               |
+| --------------------------------------------- | ------------------ | ------------------ |
+| logical and                                   | $\land$            | `\land`            |
+| logical or                                    | $\lor$             | `\lor`             |
+| not / negation                                | $\neg$             | `\neg`             |
+| implies                                       | $\to$              | `\to`              |
+| for all                                       | $\forall$          | `\forall`          |
+| there exists                                  | $\exists$          | `\exists`          |
+| element of /<br>belongs to /<br>in            | $\in$              | `\in`              |
+| implies and is implied by                     | $\leftrightarrow$  | `\leftrightarrow`  |
+| divides                                       | $\mid$             | `\mid`             |
+| does not divides                              | $\nmid$            | `\nmid`            |
+| there is no                                   | $\nexists$         | `\nexists`         |
+| set difference (not of this set)              | $\setminus$        | `\setminus`        |
+| intersection                                  | $\cap$             | `\cap`             |
+| union                                         | $\cup$             | `\cup`             |
+| overline                                      | $\overline{\rm A}$ | `\overline{\rm A}` |
+| not element of /<br>doesn't belong to /<br>in | $\notin$           | `\notin`           |
+| empty set                                     | $\varnothing$      | `\varnothing`      |
+| subset                                        | $\subseteq$        | `\subseteq`        |
+| strict subset                                 | $\subset$          | `\subset`          |
 
 ## Number Sets
 
